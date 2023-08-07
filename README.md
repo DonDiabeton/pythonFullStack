@@ -5,14 +5,18 @@ Bootcamp iniciado el año 2023 en AML.
 
 ## Commit desde bash
 
-````bash
+```bash
 git status
 ```
 
-````bash
+```bash
 git add .
 ```
 
-````bash
+```bash
 git commit -m "commit desde bash"
+```
+
+```bash
+git push origin main
 ```
