@@ -21,3 +21,7 @@ Para subir la actualizacion.
 ```bash
 git push origin main
 ```
+
+##Para trabajar con VIRTUALENV
+
+1. debemos instalar virtualenv `pip install virtualenv`
