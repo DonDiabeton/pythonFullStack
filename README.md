@@ -22,6 +22,10 @@ Para subir la actualizacion.
 git push origin main
 ```
 
-##Para trabajar con VIRTUALENV
+## Para trabajar con VIRTUALENV
 
 1. debemos instalar virtualenv `pip install virtualenv`
+2. creamos el entorno virtual `virtualenv env`
+
+3. activar entorno `env\Scripts\activate.bat`
+4. desactivar entorno `deactivate`
