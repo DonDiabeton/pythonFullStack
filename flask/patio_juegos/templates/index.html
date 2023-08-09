@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
-    <title>Document</title>
+  <title>Cajas de colores</title>
+  <style>
+    .colored-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Inicio</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, sequi dicta harum placeat ex eos quaerat, quis pariatur minima possimus aperiam dolorum ratione provident dolor iste eum voluptas eaque nesciunt nostrum, exercitationem earum commodi voluptates aut deleniti. Repudiandae harum quibusdam ea facilis vel itaque perferendis beatae quam voluptates! Deserunt, iusto!</p>
-    
+    {% set num_boxes = 5 %}
+    {% set box_color = 'red' %}
 
-
-    <div class="row">
-        <div class="caja-1">
-
-        </div>
-        <div class="caja-1">
-
-        </div>
-        <div class="caja-1">
-
-        </div>
-        <div class="caja-1">
-
-        </div>
-        <div class="caja-1">
-
-        </div>
-    </div>
-
-
+    {% for i in range(num_boxes) %}
+    <div class="colored-box" style="background-color: {{ box_color }};"></div>
+    {% endfor %}
 </body>
 </html>

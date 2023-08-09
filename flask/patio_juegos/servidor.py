@@ -1,19 +1,13 @@
 from flask import Flask, render_template
-app = Flask(__name__)                     
-    
-@app.route('/')                           
+app = Flask(__name__)
+
+@app.route('/')
 def index():
-    return render_template('index.html')
+    return 'Página de Inicio' 
 
-@app.route('/play')                           
-def play():
-    return render_template('index.html')
+@app.route('/play/<int:num_boxes>/<color>')
+def play(num_boxes, color):
+    return render_template('index.html', num_boxes=num_boxes, box_color=color)
 
-@app.route('/play/<int:num>/<string:color>')                           
-def repeat_square(num, color):
-    return render_template('index.html')
-
-
-if __name__=="__main__":
-    app.run(debug=True)                   
-
+if __name__ == '__main__':
+    app.run()
