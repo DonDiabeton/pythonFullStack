@@ -1,7 +1,7 @@
 # pythonFullStack
 Bootcamp iniciado el año 2023 en AML.
 
-## Commit desde Vscode
+## Crear entorno virtual con "virtualenv"
 
 ## Commit desde bash
 
@@ -29,3 +29,8 @@ git push origin main
 
 3. activar entorno `env\Scripts\activate.bat`
 4. desactivar entorno `deactivate`
+
+
+python -m pip freeze > requirements.txt
+
+python -m pip install -r requirements.txt
