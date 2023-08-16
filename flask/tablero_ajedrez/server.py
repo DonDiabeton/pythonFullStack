@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', row=8, col=8, color_1="color-1", color_2="color-2") 
+    return render_template('index.html', row=8, col=8, color_1="red", color_2="black") 
 
 @app.route('/<int:row>')
 def row(row):

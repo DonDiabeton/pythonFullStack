@@ -3,6 +3,21 @@ Bootcamp iniciado el año 2023 en AML.
 
 ## Crear entorno virtual con "virtualenv"
 
+crear entorno virtual.
+```bash
+virtualenv env
+```
+
+activamos el entorno virtual
+```bash
+env\Scripts\activate.bat  
+```
+
+instalamos requirements.txt en el entorno virtual
+```bash
+python -m pip install -r requirements.txt
+```
+
 ## Commit desde bash
 
 Para ver las modificaciones. 
