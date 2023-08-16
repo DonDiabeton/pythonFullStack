@@ -1,51 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-
-.chessboard {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.square {
-  width: calc(400px / [ cols ] );
-  height: calc(400px / [ rows ]);
-}
-
-.black {
-  background-color: black;
-}
-
-.white {
-  background-color: white;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    
+    <table>
+        <tbody>
+            {% for i in range(0,row): %}
+            <tr>
+                {%for x in range(0,col):%}
 
-<div class="chessboard">
+                    {%if (x + i) %2 == 0%}
+                        <td style="background-color: {{color_1}};">
+                    {%else %}
+                        <td style="background-color: {{color_2}};"></td>
+                    {%endif%} 
 
-{% for row in range(rows) %}
+                {%endfor%}
 
-  {% for col in range(cols) %}
+            </tr>   
 
-    <div class="square 
-    {% if (row + col) % 2 == 0 %}
-      black
-    {% else %}
-      white
-    {% endif %}">
-    </div>
+            {%endfor%}
 
-  {% endfor %}
-
-{% endfor %}
-
-</div>
+        </tbody>
+    </table>
 
 </body>
 </html>

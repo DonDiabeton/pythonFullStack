@@ -1,0 +1,2 @@
+-La función setUp() se utiliza para configurar el entorno necesario para cada prueba    
+-La función setUp se utiliza para inicializar una instancia

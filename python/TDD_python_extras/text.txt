@@ -1,0 +1,7 @@
+-Assert es una función en Python que se utiliza para asegurarse de que una expresión sea verdadera si es falsa arroja AssertionError
+
+-Función para verificar si una palabra es un palíndromo:
+def is_palindrome(word):
+    return word == word[::-1]
+
+-recordar funciones marcadas con gato
